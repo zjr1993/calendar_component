@@ -71,7 +71,7 @@ class drag {
         this.tRect = this.node.getBoundingClientRect();
     }
 
-    moveTo(x, y) {
+    put(x, y) {
         this.translateCurrent.x = x;
         this.translateCurrent.y = y;
         requestAnimationFrame(() => {
@@ -109,5 +109,4 @@ class drag {
         });
         this.hook();
     }
-
 }
